@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 "
+    <title></title>
+    <link rel="stylesheet" href="stlye.css">
+    <!--font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--idk abt this<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/log.png"/a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html"></a></li>
+                <li><a href="about.html">About me </a></li>
+                <li><a href="TOK.html">TOK</a></li>
+                <li><a href="CAS_1.html">CAS</a></li>
+                 <li><a href="EE_1.html">EE</a></li>
+                <li><a href="IA.html">IA</a></li>
+                 <li><a href="files.html">Files</a></li>
+                 <li><a href="contact.html">Contact me</a></li>
+             </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+        
+    <h1>Files</h1>
+
+</section>
+    
+<!--Javescript for toggle menu-->
+    
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    
+     function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+
+</script>
+
+<section>
+    <div class="row">
+        <div class="text-box">
+            <!-- Your text here -->
+            <p>These are some IA’s made by students across the world:</p>
+            <ul>
+                <li><a href="https://vidyalai.com/blog/">https://vidyalai.com/blog/</a></li>
+                <li><a href="https://www.clastify.com">https://www.clastify.com</a></li>
+                <li><a href="https://blogs.ibo.org/">https://blogs.ibo.org/</a></li>
+                <li><a href="https://nailib.com/blog">https://nailib.com/blog</a></li>
+            </ul>
+            <p>Some IA's, if they are not popping up use these links to view:</p>
+        </div>
+        <div class="file-container">
+            <div class="file-wrapper">
+                <embed src="images/example02_en.pdf" type="application/pdf">
+                <div class="file-text">File 1 description</div>
+            </div>
+        </div>
+        <div class="file-container">
+            <div class="file-wrapper">
+                <embed src="images/example02_annotated_en.pdf" type="application/pdf">
+                <div class="file-text">File 2 description</div>
+            </div>
+        </div>
+        <div class="file-container">
+            <div class="file-wrapper">
+                <embed src="images/example10_annotated_en.pdf" type="application/pdf">
+                <div class="file-text">File 3 description</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+
+    
+    
+    
+    
+</section>
+    
+
+</body>
+</html>

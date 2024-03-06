@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 "
+    <title></title>
+    <link rel="stylesheet" href="stlye.css">
+    <!--font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/log.png"/a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                              <ul>
+                <li><a href="index.html"></a></li>
+                <li><a href="about.html">About me </a></li>
+                <li><a href="TOK.html">TOK</a></li>
+                <li><a href="CAS_1.html">CAS</a></li>
+                 <li><a href="EE_1.html">EE</a></li>
+                <li><a href="IA.html">IA</a></li>
+                 <li><a href="files.html">Files</a></li>
+                 <li><a href="contact.html">Contact me</a></li>
+             </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+              
+    <h1>IBify</h1>
+    <p> ...</p>
+
+                  
+</div>
+</section>
+<!--Javescript for toggle menu-->
+    
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    
+     function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+
+</script>
+
+
+    
+<!----campus--->
+<section class="campus">
+    
+    <h1> Here are the contents of the website</h1>
+    <p> </p>
+    
+    <div class="row">
+        
+        <div class="campus-col">
+            <img src="images/london.png">
+            <div class="layer">
+                <li><a href="about.html"><h3>TOK</h3></a></li>
+            </div>
+        </div>
+        
+         <div class="campus-col">
+            <img src="images/luckyblok.png">
+            <div class="layer">
+                <li><a href="course.html"><h3>CAS</h3></a></li>
+            </div>
+        </div>
+        
+         <div class="campus-col">
+            <img src="images/luckyblok.png">
+            <div class="layer">
+                <li><a href="EE_1.html"><h3>EE</h3></a></li>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+    
+        <div class="campus-col1">
+            <img src="images/luckyblok.png">
+            <div class="layer">
+                <li><a href="IA.html"><h3>IA</h3></a></li>
+            </div>
+        </div> 
+    
+        <div class="campus-col2">
+            <img src="images/luckyblok.png">
+            <div class="layer">
+                <li><a href="files.html"><h3>Files</h3></a></li>
+            </div>
+        </div> 
+   <!--     
+        <div class="campus-col">
+            <img src="images/washington.png">
+            <div class="layer">
+                <li><a href="files.html"><h3>Files</h3></a></li>
+            </div>
+        </div> 
+-->
+
+        
+    
+    
+</section>
+    
+
+</body>
+</html>

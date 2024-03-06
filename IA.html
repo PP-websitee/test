@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 "
+    <title></title>
+    <link rel="stylesheet" href="stlye.css">
+    <!--font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--idk abt this<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/log.png"/a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html"></a></li>
+                <li><a href="about.html">About me </a></li>
+                <li><a href="TOK.html">TOK</a></li>
+                <li><a href="CAS_1.html">CAS</a></li>
+                 <li><a href="EE_1.html">EE</a></li>
+                <li><a href="IA.html">IA</a></li>
+                 <li><a href="files.html">Files</a></li>
+                 <li><a href="contact.html">Contact me</a></li>
+             </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+        
+    <h1>IA</h1>
+
+</section>
+    
+<!---------blog page content-->
+    
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/ia.png">
+            <h2>Internal Assesments</h2>
+            <p>The  Diploma Programme's Internal Assessment  allows students to pursue their academic interests in any field they choose. Furthermore, this independent research project allows students to demonstrate the information and skills gained during their DP studies. An IA typically involves developing a research question, conducting an investigation, and reporting on the findings in a structured report. The IA emphasizes critical thinking, research, data analysis, and academic writing skills. Additionally, students must manage their time effectively and work independently.The IA will help students strengthen these skills while also teaching them how to choose a research topic, collect and evaluate data, and draw conclusions based on the results.
+
+<br>
+<br>
+As previously stated, the (MYP) is intended to help students build subject-specific and interdisciplinary understanding. MYP students require a variety of talents to succeed, including analytical thinking, problem-solving, research, communication, and self-management abilities.
+The MYP stresses intellectual challenge and encourages students to draw parallels between their courses and the actual world. It encourages the development of communication skills, multicultural awareness, and global engagement.
+<br>
+<br>
+
+Students in the MYP are educated to be independent learners who can identify links between academic subjects and real-world situations. They will also develop a feeling of social obligation and a desire to make a good difference in both their local area and the wider world. The MYP challenges students to use their academic knowledge and experiences, preparing them for success in both academic and personal tasks.
+</p>
+            
+           
+        
+        </div>
+        
+    
+</section>
+
+
+<!--Javescript for toggle menu-->
+    
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    
+     function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+
+</script>
+    
+
+
+</section>
+        
+ <section>
+    <div class="row">
+        <div class="file-container">
+            <div class="file-wrapper">
+                <embed src="images/example02_annotated_en.pdf" type="application/pdf">
+                <div class="file-text"></div>
+            </div>
+        </div>
+         <div class="file-container">
+            <div class="file-wrapper">
+                <embed src="images/example10_annotated_en.pdf" type="application/pdf">
+                <div class="file-text">The outline to writing an EE</div>
+            </div>
+        </div>
+        <div class="file-container">
+            <div class="file-wrapper">
+                <embed src="images/example02_en.pdf" type="application/pdf">
+                <div class="file-text">An excellent Pscyschology EE</div>
+            </div>
+        </div>
+    </div>
+</section>
+   
+    
+    
+    
+
+    
+</body>
+</html>

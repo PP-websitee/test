@@ -1,0 +1,1144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/logz.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav img {
+    width: 150px;    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;   
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+
+.nav-links ul li::after{
+    
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336; /*#4646FF*/
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after{
+     width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/*--title text--*/
+.text-box h1{
+    font-size: 80px;
+    color: #fff;
+    
+}
+
+/*--text under the main title--*/
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px; 
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    
+    border: 1px solid #f44336;
+    background: #f44336; /*#*/
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media (min-width: 300px) and (max-width: 460px) {
+
+    .header{
+        margin-left:0px;
+        
+    }
+    .textbox {
+        text-align: right;
+    }
+
+    .textbox h1 {
+        font-size: 20px;
+        margin-right: 20px; /* Adjust margin as needed */
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .fa {
+        display: inline-block;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .textbox h1 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .textbox h1 {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        width: 150px;
+        right: -150px;
+    }
+
+    nav .fa {
+        font-size: 18px;
+    }
+
+    .nav-links ul {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .textbox h1 {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        width: 100px;
+        right: -100px;
+    }
+
+    nav .fa {
+        font-size: 16px;
+    }
+
+    .nav-links ul {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .textbox h1 {
+        font-size: 15px;
+        
+    }
+
+    .nav-links {
+        width: 100px;
+        right: -100px;
+    }
+
+    nav .fa {
+        font-size: 16px;
+    }
+
+    .nav-links ul {
+        padding: 10px;
+    }
+}
+
+    
+}
+
+/*--COURSE--*/
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777; 
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.course-col{
+    
+    flex-basis: 31%;
+    background: #fff3f3;   
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;   
+    transition: 0.5s;
+}
+
+ 
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    display: block;
+    clear: both;
+    
+
+}
+
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column; 
+    }   
+}
+@media (min-width: 300px) and (max-width: 400px):{
+    .row{
+        flex-direction: column; 
+    }  
+    
+}
+
+    
+
+/*----------Guides*/
+
+.campus{
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col{
+    
+    flex-basis: 32%;
+    border-radius: 10px;    
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;  
+}
+
+.campus-col1{
+    
+    flex-basis: 32%;
+    border-radius: 10px;    
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;  
+}
+
+.campus-col2{
+    
+    flex-basis: 32%;
+    border-radius: 10px;    
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;  
+}
+
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.campus-col1 img{
+    width: 100%;
+    display: block;
+}
+.campus-col2 img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;  
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(70,70,255); /*(226,0,0,0.7) for red*/
+}
+
+
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    .row {
+        flex-direction: column; 
+        margin-top: -50px; /* Move the entire row up by 50px */
+    }
+    
+    .campus-col {
+        flex-basis: 100%;
+        margin-bottom: 500px; /* Adjust the spacing between each campus column */
+        margin-top: -450px;
+    }
+    
+    .campus-col1 {
+        flex-basis: 100%;
+        margin-top: -750px;
+    }
+    
+    .campus-col2 {
+        flex-basis: 100%;
+        margin-top: 20px; /* Adjusted to match the margin-top of campus-col1 */
+    }
+    
+    .campus h1 {
+        margin-bottom: 160px;
+        margin-top: -39px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 460px) {
+    .row {
+        flex-direction: column; 
+        margin-top: 500px; /* Move the entire row up by 50px */
+    }
+    
+    .campus-col {
+    flex-basis: 100%;
+    margin-bottom: 500px; /* Adjust the spacing between each campus column */
+    margin-top: -450px;
+    }
+    
+    .campus-col1{
+        flex-basis: 100%;
+        margin-top: -950px;
+        }
+    .campus-col2{
+        flex-basis: 100%;
+        margin-top: -50px;
+        }
+    .campus h1{
+        margin-bottom: 16px;
+        margin-top: -40px;
+    }
+}
+
+}
+
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonial-col:hover{
+   box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transition: 0.5s;
+   
+    
+}
+
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{
+    padding: 0;
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fa{
+    color: #f44336;
+}
+
+
+.testimonial-col img{
+    margin-left: 0px;
+    margin-right: 15px; 
+    }
+
+
+
+/*----------call to action*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width:700px) {
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/*----------footer*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa fa-heart-o{
+    color: #f44336;
+}
+
+/*----------about us page*/
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/banner1.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Ensures flex items wrap to next line */
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.about-col img {
+    width: 100%;
+    display: block; /* Ensures image does not inherit vertical-align */
+}
+
+.about-col h1 {
+    padding-top: 0;
+    font-size: 40px;
+}
+
+.about-col p {
+    padding: 15px 0 55px;
+    font-size: 15px;
+}
+
+.red-btn {
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.red-btn:hover {
+    color: #fff;
+}
+/* Original CSS code here */
+
+/* Media queries */
+@media (min-width: 300px) and (max-width: 400px) {
+    h1 {
+        margin-top: 90px; /* adjust the value as you like */
+    }
+
+    .about-col h1 {
+        font-size: 20px;
+        margin-bottom: 50px;
+        margin-top: -300px;
+        padding: 0 20px;
+        
+    }
+
+    .about-col p {
+        margin-top: -40px;
+        text-align:justify;
+        padding: 0 20px;
+    }
+
+    .about-col img {
+        margin-top: -50px;
+        margin-bottom: -20px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 460px) {
+    h1 {
+        margin-top: 90px; /* adjust the value as you like */
+    }
+
+    .about-col h1 {
+        font-size: 20px;
+        margin-bottom: 50px;
+        margin-top: -30px;
+        padding: 0 20px;
+    }
+
+    .about-col p {
+        margin-top: -40px;
+        text-align:justify;
+        padding: 0 20px;
+    }
+
+    .about-col img {
+        margin-top: -50px;
+        margin-bottom: -20px;
+        border-radius: 25px;
+    }
+}
+
+@media (min-width: 600px) (max-width: 800px) and {
+    .about-col h1 {
+        font-size: 35px;
+        margin-bottom: 50px;
+        margin-top: -30px;
+    }
+
+    .about-col p {
+        margin-top: -50px;
+    }
+
+    .about-col img {
+        margin-top: -50px;
+        margin-bottom: -20px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .about-col {
+        flex-direction: column; /* Change flex-direction to column */
+        align-items: center; /* Align items to the center */
+    }
+
+    .about-col h1{
+        font-size: 30px;
+    }
+
+    .about-col img {
+        margin-top: 20px; /* Add margin between paragraph and image */
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+    .about-col {
+        flex-direction: column; /* Change flex-direction to column */
+        align-items: center; /* Align items to the center */
+    }
+
+    .about-col h1{
+        font-size: 20px;
+    }
+
+    .about-col img {
+        margin-top: 20px; /* Add margin between paragraph and image */
+    }
+}
+@media (min-width: 901px) and (max-width: 1400px) {
+    .about-col {
+        flex-direction: column; /* Change flex-direction to column */
+        align-items: center; /* Align items to the center */
+    }
+
+    .about-col h1{
+        font-size: 20px;
+    }
+
+    .about-col img {
+        margin-top: 20px; /* Add margin between paragraph and image */
+    }
+}
+/* TOK CAS EE PAGES */
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.blog-left{
+    flex-basis: 65%;
+    margin-left: 260px;
+}
+.blog-left img{
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 25px; /* Add rounded corners */
+    
+}
+
+.blog-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+    margin-left: 312px;
+}
+
+.blog-left p{
+    color: #999;
+    padding: 0;
+}
+
+.blog-right{
+    flex-basis: 32%;
+}
+
+.blog-right h3{
+    background: #f44336;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 300px) and (max-width: 399.99px) {
+  /* You can change any CSS properties that you want to make the layout fit the smaller screen */
+.blog-content {
+  width: 100%; /* Use the full width of the screen */
+  padding: 20px 0; /* Reduce the padding */
+}
+
+.blog-left {
+  flex-basis: 100%; /* Make the left column take the whole row */
+  margin: 0; /* Remove all margins */
+  padding: 0; /* Remove all padding */
+  margin-top: -300px;
+}
+.blog-left p {
+    color: #999;
+    padding: 0 20px;
+    text-align: justify; /* Justify the text */
+    margin-top: 20px;
+}
+
+.blog-left img {
+  width: 90%; /* Reduce the image width */
+  display: block; /* Ensure the image is a block element */
+  margin: 0 auto; /* Center the image */
+  border-radius: 25px; /* Add rounded corners */
+  
+}
+
+.blog-left h2 {
+  margin: 0; 
+  margin-top: 20px; /* move text title underneath the image downward */
+  text-align: center; /* Center the text */    
+}
+
+.blog-right {
+  flex-basis: 100%; /* Make the right column take the whole row */
+}
+
+.blog-right h3 {
+  text-align: center; /* Center the text */
+    
+}
+
+.blog-right div {
+  flex-direction: column; /* Make the div elements stack vertically */
+  align-items: center; /* Center the div elements */
+}
+
+   
+}
+@media (min-width: 399.99px) and (max-width: 430px) {
+  /* You can change any CSS properties that you want to make the layout fit the smaller screen */
+.blog-content {
+  width: 100%; /* Use the full width of the screen */
+  padding: 20px 0; /* Reduce the padding */
+}
+
+.blog-left {
+  flex-basis: 100%; /* Make the left column take the whole row */
+  margin: 0; /* Remove all margins */
+  padding: 0; /* Remove all padding */
+  margin-top: -300px;
+}
+.blog-left p {
+    color: #999;
+    padding: 0 20px;
+    text-align: justify; /* Justify the text */
+    margin-top: 20px;
+    
+}
+
+.blog-left img {
+  width: 90%; /* Reduce the image width */
+  display: block; /* Ensure the image is a block element */
+  margin: 0 auto; /* Center the image */
+  border-radius: 25px; /* Add rounded corners */
+    margin-top: 300px;
+}
+
+
+
+.blog-left h2 {
+  margin: 0; 
+  margin-top: 20px; /* move text title underneath the image downward */
+  text-align: center; /* Center the text */    
+}
+
+.blog-right {
+  flex-basis: 100%; /* Make the right column take the whole row */
+}
+
+.blog-right h3 {
+  text-align: center; /* Center the text */
+    
+}
+
+.blog-right div {
+  flex-direction: column; /* Make the div elements stack vertically */
+  align-items: center; /* Center the div elements */
+}  
+}
+
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .about-col h1 {
+        font-size: 35px;
+        margin-bottom: 50px;
+        margin-top: -30px;
+    }
+
+    .about-col p {
+        margin-top: -50px;
+    }
+
+    .about-col img {
+        margin-top: -50px;
+        margin-bottom: -20px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .about-col {
+        flex-direction: column; /* Change flex-direction to column */
+        align-items: center; /* Align items to the center */
+    }
+
+    .about-col h1{
+        font-size: 30px;
+    }
+
+    .about-col img {
+        margin-top: 20px; /* Add margin between paragraph and image */
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+    .about-col {
+        flex-direction: column; /* Change flex-direction to column */
+        align-items: center; /* Align items to the center */
+    }
+
+    .about-col h1{
+        font-size: 20px;
+    }
+
+    .about-col img {
+        margin-top: 20px; /* Add margin between paragraph and image */
+    }
+}
+@media (min-width: 901px) and (max-width: 1400px) {
+    .about-col {
+        flex-direction: column; /* Change flex-direction to column */
+        align-items: center; /* Align items to the center */
+    }
+
+    .about-col h1{
+        font-size: 20px;
+    }
+
+    .about-col img {
+        margin-top: 20px; /* Add margin between paragraph and image */
+    }
+}
+
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px  20px;
+}
+
+.comment-box h3{
+    text-align: left;
+}
+
+.comment-form input, .comment-form textarea{
+    
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.comment-form button{
+    margin: 10px 0;
+}
+
+@media(max-width:700px){
+    .subheader h1{
+        font-size: 24px;
+        
+    }
+    
+}
+
+/*----------files page*/
+.text-box {
+    color: black;
+    float: left;
+    width: 50%; /* Adjust width as needed */
+    margin-top: 70px; /* Move downward */
+    margin-left: 20px; /* Move to the left */
+}
+
+.text-box p,
+.text-box ul,
+.text-box ul li {
+    color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-box ul li a {
+    color: black;
+    text-decoration: none; /* Remove underline */
+}
+
+.file-container {
+    float: left;
+    width: 50%; /* Adjust width as needed */
+    box-sizing: border-box;
+}
+
+.file-wrapper {
+    position: relative;
+}
+
+.file-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity as needed */
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust the spacing between rows */
+}
+
+.file-container {
+    width: calc(33.33% - 10px); /* Adjust the width of each file container */
+    margin-right: 10px; /* Adjust the spacing between files */
+}
+
+.file-wrapper {
+    position: relative;
+}
+
+embed {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    margin-top: 70px; /* Adjust the margin to move the embed elements downwards */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+}
+
+.file-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity */
+    padding: 5px;
+    text-align: center;
+}
+/* Media for Files Section */
+@media (min-width: 300px) and (max-width: 400px){
+    .row {
+         margin-top: 300px;
+        
+    }
+    .text-box {
+    color: black;
+    float: left;
+    width: 50%; /* Adjust width as needed */
+    margin-top: 170px; /* Move downward */
+    margin-left: 20px; /* Move to the left */}
+    
+    .file-text {
+    position: absolute;
+    bottom: -30px; /* Move the file descriptions down */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity as needed */
+    text-align: center;
+    padding: 5px;
+}
+
+    embed {
+        margin-top: -1500px; /* Move embed elements 20px down */
+    }
+    
+    .file-container {
+        width: 100%; /* Adjust width to full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 200px; /* Add more bottom margin for spacing */
+    }
+
+}
+
+
+@media (max-width: 700px) {
+    .text-box p {
+        margin-bottom: 15px; /* Increase margin between paragraph and list */
+        font-size: 18px; /* Increase text size */
+        margin-top: 50px;
+    }
+
+    .file-container {
+        width: 100%; /* Adjust width to full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add more bottom margin for spacing */
+    }
+
+    embed {
+        margin-top: 150px; /* Move embed elements 20px down */
+    }
+}
+
+
+/*----------contact us page*/
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+    
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea{
+    
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+}
